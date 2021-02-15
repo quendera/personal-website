@@ -1,0 +1,169 @@
+<html>
+
+<head>
+<style>
+
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  height: auto;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.scroller {
+  width:auto;
+  height:80%;
+  line-height:2em;
+  overflow:auto;
+  padding:5px;
+  scrollbar-width: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.column1 {
+  float: left;
+  width: 73%;
+  padding: 5px;
+}
+
+.column2 {
+  float: right;
+  width: 25%;
+  padding: 5px;
+}
+
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.test {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+:target {
+    color: rgb(0, 0, 0);
+    -webkit-filter: invert(100%);
+    filter: invert(100%);}
+
+</style>
+
+<title>quendera </title>
+</head>
+<body class="page_bg" >
+<div class="test" onmousemove="myFunction(event)">
+<br>
+<br>
+<b><a href="../index.html">quendera</a></b>
+<br>
+<small>
+<a href="../tiago.html">tiago</a>  <a href="../cystyr.html">cystyr</a>  <a href="../rgyu.html">rgyu</a>
+</small>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p id="demo"></p>
+<script>
+function myFunction(e) {
+  var x = e.clientX;
+  var coor = x;
+  var m = setColor_mouse();
+}
+
+
+// Update the count down every 1 second
+var myVar = setInterval(setColor, 100);
+var x = document.body;
+
+
+function setColor() {
+  var image = document.images[0];
+  image.style.filter = "hue-rotate(00deg)";
+  //x.style.backgroundColor ="black";
+  //document.getElementById("demo").innerHTML = document.body.style.backgroundColor;
+
+}
+
+
+function setColor_mouse() {
+  var image = document.images[0];
+  image.style.filter = "hue-rotate(90deg)";
+  //x.style.backgroundColor = "red";
+  //document.getElementById("demo").innerHTML = document.body.style.backgroundColor;
+
+}
+
+
+</script>
+
+<!--END OF HEAD-->
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="row">
+    <div class="column2">
+        <div class="scroller">
+        <b>publications</b>
+        <br>
+        <i>
+          
+        <br>
+        <br>
+        </i>
+        <br>
+        in construction
+        <br>
+        <br>
+        <br>
+        </div>
+
+    </div>
+    <div class="column1">
+        <img src="./talks/talks.jpg" alt="eka" style="width:80%"> 
+    </div>
+</div> 
+
+</body>
+</html>
