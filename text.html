@@ -37,13 +37,13 @@ img {
 
 .column1 {
   float: left;
-  width: 73%;
+  width: 25%;
   padding: 5px;
 }
 
 .column2 {
   float: right;
-  width: 25%;
+  width: 73%;
   padding: 5px;
 }
 
@@ -78,6 +78,10 @@ a:active {
   opacity: 1;
 }
 
+:target {
+   background-color: rgb(150, 0, 0);
+}
+
 </style>
 
 <title>quendera </title>
@@ -86,10 +90,10 @@ a:active {
 <div class="test" onmousemove="myFunction(event)">
 <br>
 <br>
-<b><a href="../index.html">quendera</a></b>
+<b><a href="./index.html">quendera</a></b>
 <br>
 <small>
-  <a href="./text.html">text</a>  <a href="./av.html">av</a>  <a href="./music.html">music</a>
+<a href="./text.html">text</a>  <a href="./av.html">av</a>  <a href="./music.html">music</a>
 </small>
 <br>
 <br>
@@ -139,27 +143,30 @@ function setColor_mouse() {
 <br>
 
 <div class="row">
-    <div class="column2">
+    <div class="column1">
         <div class="scroller">
-        <b>psiloscoppia</b>
+        <b>text</b>
+        <br>
         <br>
         <i>
-            with G. Guiomar and Ale Braga
-        <br>
-        <br>
+            pseudo-academic exercises in psychology, neuroscience, philosophy, computer science
+            <br>
+            <br>
         </i>
         <br>
-        celebrating the Mecca of Lisbon's after scene.
         <br>
+            <a href="./text/talks.html">-talks-</a>
         <br>
+            <a href="./text/publications.html">-publications-</a>
         <br>
-            eka palace, Lisbon PT [08.2016]
-
+           <!-- <a href="./rgyu/boom2016.html">boom festival [2016]</a>
+        <br>
+            <a href="./cystyr/eka.html">eka palace [2016]</a> -->
         </div>
 
     </div>
-    <div class="column1">
-        <img src="./eka/eka.gif" alt="eka" style="width:100%">
+    <div class="column2">
+        <img src="./text/text.png" alt="text" style="max-width:60%">
     </div>
 </div>
 
