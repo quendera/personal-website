@@ -8,16 +8,17 @@
     text-align: center;
     color: white;
     font-family: "Courier New", Courier, monospace;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 40%;
-    height: auto;
+    max-width: 50%;
+    vertical-align: middle;
+    height: 50%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
   }
@@ -48,6 +49,22 @@
   }
 
 
+  .menu_links:before{
+    content: '<';
+  }
+
+  .menu_links:after{
+    content: '>';
+  }
+
+  .menu_links:hover:before{
+    content: '>';
+  }
+
+  .menu_links:hover:after{
+    content: '<';
+  }
+
   a:link {
     color: white;
     background-color: transparent;
@@ -60,11 +77,14 @@
     text-decoration: none;
   }
 
+
+
   a:hover {
     color: red;
     background-color: transparent;
     text-decoration: underline;
   }
+
 
   a:active {
     color: red;
@@ -91,46 +111,41 @@
     <a href="./index.html"><p style ="font-size: 1.5em; font-weight:bold">quendera</p></a>
     <br>
     <small>
-      <a href="./live.html">< live ></a>
-      <a href="./texts.html">< texts ></a>
-      <a href="./tracks.html">< tracks ></a>
-      <a href="./visuals.html">< visuals ></a>
+      <a href="./live.html" class="menu_links"> live </a>
+      <a href="./texts.html" class="menu_links"> texts </a>
+      <a href="./tracks.html" class="menu_links"> tracks </a>
+      <a href="./visuals.html" class="menu_links"> visuals </a>
     </small>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p id="demo"></p>
+
     <script>
-    function myFunction(e) {
-      var x = e.clientX;
-      var coor = x;
-      var m = setColor_mouse();
-    }
+      function myFunction(e) {
+        var x = e.clientX;
+        var coor = x;
+        var m = setColor_mouse();
+      }
 
 
-    // Update the count down every 1 second
-    var myVar = setInterval(setColor, 100);
-    var x = document.body;
+      // Update the count down every 1 second
+      var myVar = setInterval(setColor, 100);
+      var x = document.body;
 
 
-    function setColor() {
-      var image = document.images[0];
-      image.style.filter = "hue-rotate(00deg)";
-      //x.style.backgroundColor ="black";
-      //document.getElementById("demo").innerHTML = document.body.style.backgroundColor;
+      function setColor() {
+        var image = document.images[0];
+        image.style.filter = "hue-rotate(00deg)";
+        //x.style.backgroundColor ="black";
+        //document.getElementById("demo").innerHTML = document.body.style.backgroundColor;
 
-    }
+      }
 
 
-    function setColor_mouse() {
-      var image = document.images[0];
-      image.style.filter = "hue-rotate(90deg)";
-      //x.style.backgroundColor = "red";
-      //document.getElementById("demo").innerHTML = document.body.style.backgroundColor;
+      function setColor_mouse() {
+        var image = document.images[0];
+        image.style.filter = "hue-rotate(90deg)";
+        //x.style.backgroundColor = "red";
+        //document.getElementById("demo").innerHTML = document.body.style.backgroundColor;
 
-    }
+      }
 
 
     </script>
@@ -142,7 +157,7 @@
     <br><br>
     <br>
     <div class="row">
-      <img src="./home/home.png" alt="Girl in a jacket" style="width:100%">
+      <img src="./home/home.png" alt="Girl in a jacket">
     </div>
 
   </div>
